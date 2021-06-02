@@ -23,8 +23,7 @@
     "gh-pages:clean": "rm -rf docs",
     "gh-pages:build": "build-storybook -c .storybook -o docs",
     "gh-pages:publish": "$(npm bin)/git-directory-deploy --directory docs",
-    "gh-pages": "npm run gh-pages:clean && npm run gh-pages:build && npm run gh-pages:publish",
-    "prepublish": "vue-cli-service build"
+    "gh-pages": "npm run gh-pages:clean && npm run gh-pages:build && npm run gh-pages:publish"
   },
   "devDependencies": {
     "@babel/core": "^7.6.0",
